@@ -1,0 +1,42 @@
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* shared-style */
+.navbar, .nav-item{
+    display: flex;
+}
+.link-color-one{
+    color: #252432;
+}
+.link-clr-two{
+    color: #8987A1;
+}
+
+
+
+/* nav-related-style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 150px 700px 150px;
+}
+.nav-item{
+    gap: 48px;
+}
+.nav-links{
+    list-style: none;
+    font-size: 1rem;
+}
+.nav-links a:hover{
+    color:lightcoral;
+    font-size: larger;
+}
+.nav-ahref{
+    text-decoration: none;
+}
