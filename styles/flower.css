@@ -62,6 +62,7 @@
 .banner{
     justify-content: space-between;
     margin: 0 150px;
+    max-width: 100%;
 }
 .banner-title{
     font-weight: 700;
@@ -121,7 +122,7 @@ max-width: 100%;
 }
 .seller-img{
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 .badge{
     height: 250px;
@@ -149,6 +150,66 @@ max-width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.deal-img{
+    display: flex;
+    justify-content: center;
+}
+.deal-img{
+    gap: 20px;
+}
+.fdh{
+    font-size: 2rem;
+    text-align: center;
+}
+.weird{
+    background-image: url("../images/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    border-radius: 13px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.first-deal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.first-deal-content-bloom{
+    background-image: url("../images/deal-bloom.png");
+    background-repeat: no-repeat;
+     background-size: cover;
+     width: 367px;
+     height: 201px;
+     border-radius: 13px;
+     text-align: center;
+    color: #FFFFFF;
+}
+.first-deal-content-ana{
+    background-image: url("../images/deal-ana.png");
+    background-repeat: no-repeat;
+     background-size: cover;
+     width: 367px;
+     height: 201px;
+     border-radius: 13px;
+     text-align: center;
+    color: #FFFFFF;
+}
+.last-btn{
+border: none;
+color: antiquewhite;
+}
+.btn-last{
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: bisque;
+}
+.btn-last a:hover{
+    color: #000000;
+    font-size: larger;
 }
 
 
@@ -218,9 +279,9 @@ max-width: 100%;
     
     html, .header, body, main{
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
-        overflow-x: auto;
+        
     }
     .banner{
         flex-direction: column-reverse;
@@ -232,8 +293,9 @@ max-width: 100%;
     .banner{
         width: 100%;
         max-width: 100%;
-        margin: 0 auto;
-        flex-wrap: wrap; 
+        margin: 0 10px 0 10px;
+        flex-wrap: wrap;
+    
     }
     
     .hide-on-mobile{
@@ -254,9 +316,7 @@ max-width: 100%;
     gap: 20px;
     width: 100%;
     max-width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-        
+    
    }
    .card{
     width: 100%;
@@ -285,6 +345,7 @@ max-width: 100%;
    .last-section{
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 50px;
    }
    
    }
