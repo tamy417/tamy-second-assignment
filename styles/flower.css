@@ -8,7 +8,7 @@
 }
 
 /* shared-style */
-.navbar, .nav-item, .banner{
+.navbar, .nav-item, .banner, .seller{
     display: flex;
 }
 .link-color-one{
@@ -89,6 +89,8 @@
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 10px;
+width: 100%;
+max-width: 100%;
 }
 .card img{
     max-width: 100%;
@@ -112,10 +114,44 @@ gap: 10px;
     font-size: larger;
 }
 
+/* seller section */
+.seller{
+    margin: 200px 150px 130px 150px;
+    gap: 60px;
+}
+.seller-img{
+    position: relative;
+    width: 50%;
+}
+.badge{
+    height: 250px;
+    width: 250px;
+    background: transparent;
+    position: absolute;
+    right: -10%;
+    top: -20%;
+    transform: translate(-0% -100%);
+}
+.seller-title{
+    font-size: 3.12rem;
+    font-weight: 600;
+}
+.seller-para{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.seller-list > li{
+    padding-bottom: 24px;
+}
 
 
 /* Responsive Styles for mobile device*/
 @media screen and (max-width: 576px) {
+    
+    .header, body, main{
+        width: 100%;
+        margin: auto;
+    }
     .banner{
         flex-direction: column-reverse;
     }
@@ -124,21 +160,52 @@ gap: 10px;
         gap: 100px
     }
     .banner{
-        margin: 30px;
-        flex-wrap: wrap;
         width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap; 
     }
+    
     .hide-on-mobile{
         display: none;
     }
     .plants{
         margin: 0 auto;
+        
     }
     .plants-title{
         flex-wrap: wrap;
+        margin: 0 auto;
+        margin-left: 15%;
+       
     }
    .plant-card{
     grid-template-columns:repeat(2, 1fr);
-
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        margin-left: 50px;
    }
-}
+   .card{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+   }
+   .seller{
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0;
+   }
+   .badge{
+    display: none;
+   }
+   .seller-content{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+   }
+   .seller-img{
+  width: 50%;
+   }
+   }
