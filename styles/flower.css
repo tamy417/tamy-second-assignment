@@ -347,5 +347,11 @@ color: antiquewhite;
     margin: 0 auto;
     margin-bottom: 50px;
    }
-   
+   .deal-img{
+    flex-direction: column;
+    align-items: center;
+   }
+   .weird{
+    width: 85%;
+   }
    }
