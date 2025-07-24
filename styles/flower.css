@@ -144,6 +144,37 @@ max-width: 100%;
     padding-bottom: 24px;
 }
 
+/* footer */
+.footer-content{
+    background-image: url("/images/news-letter-bg.png");
+    width: 1440px;
+    height: 533px;
+    max-width: 100%;
+    margin: 120px 0;
+   
+}
+.footer-title{
+    font-size: 3.12rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 0;
+    
+}
+.footer-input{
+    margin: 0px;
+    margin-left: 250px;
+    height: 36px;
+    width: 800px;
+    
+}
+.box-btn{
+    display: flex;
+    gap:0px;
+    
+}
 
 /* Responsive Styles for mobile device*/
 @media screen and (max-width: 576px) {
@@ -198,9 +229,7 @@ max-width: 100%;
     margin: 0 auto;
     gap: 0;
    }
-   .badge{
-    display: none;
-   }
+   
    .seller-content{
     flex-wrap: wrap;
     margin-bottom: 20px;
