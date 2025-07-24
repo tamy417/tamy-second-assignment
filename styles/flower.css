@@ -8,7 +8,7 @@
 }
 
 /* shared-style */
-.navbar, .nav-item, .banner, .seller{
+.navbar, .nav-item, .banner, .seller, .last-section{
     display: flex;
 }
 .link-color-one{
@@ -154,7 +154,7 @@ max-width: 100%;
 
 /* footer */
 .footer-content{
-    background-image: url("/images/news-letter-bg.png");
+    background-image: url("../images/news-letter-bg.png");
     width: 1440px;
     height: 533px;
     max-width: 100%;
@@ -181,6 +181,9 @@ max-width: 100%;
 .box-btn{
     display: flex;
     gap:0px;
+}
+.last-section{
+    justify-content: space-between;
     
 }
 
