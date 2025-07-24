@@ -61,12 +61,20 @@
 /* banner */
 .banner{
     justify-content: space-between;
-    margin: 0 150px;
+    padding: 0 150px;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 .banner-title{
     font-weight: 700;
     font-size: 4rem;
+}
+.banner-img img{
+width: 100%;
+max-width: 100%;
+height: auto;
+display: block;
 }
 
 /* Plant Section */
@@ -278,26 +286,30 @@ color: antiquewhite;
 @media screen and (max-width: 576px) {
     
     html, .header, body, main{
-        width: 100%;
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
+        overflow-x: hidden;
         
     }
     .banner{
         flex-direction: column-reverse;
-    }
-    .navbar{
-        margin: 10px 50px;
-        gap: 100px
-    }
-    .banner{
         width: 100%;
         max-width: 100%;
         margin: 0 10px 0 10px;
-        flex-wrap: wrap;
-    
+        padding: 0 15px;
+        box-sizing: border-box;
     }
-    
+    .navbar{
+        margin: 10px;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px
+    }
+    .nav-img{
+        max-width: 120px;
+        height: auto;
+    }
     .hide-on-mobile{
         display: none;
     }
