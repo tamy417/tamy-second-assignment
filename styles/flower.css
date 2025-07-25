@@ -303,7 +303,7 @@ color: #8987A1;
 @media screen and (max-width: 576px) {
     
     html, .header, body, main{
-        margin: 0;
+        margin: 0 5px;
         padding: 0;
         overflow-x: hidden;
         
@@ -376,9 +376,11 @@ color: #8987A1;
    .footer-content {
     width: 100%;
     height: 100%;
+    
    }
    .footer-title{
     padding: 150px 0 0;
+    
    }
    .footer-input{
     margin-left: 0;
@@ -398,8 +400,8 @@ color: #8987A1;
     align-items: center;
    }
    .weird{
-    width: 85%;
-    padding-top: 60px;
+    width: 92%;
+    padding-top: 50px;
    }
   
    }
