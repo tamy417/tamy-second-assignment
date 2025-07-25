@@ -332,7 +332,7 @@ color: #8987A1;
     }
     .plants{
         margin: 0 auto;
-        
+        max-width: 100%;
     }
     .plants-title{
         flex-wrap: wrap;
@@ -342,15 +342,23 @@ color: #8987A1;
     }
    .plant-card{
     grid-template-columns:repeat(2, 1fr);
-    gap: 20px;
     width: 100%;
     max-width: 100%;
-    
+    gap: 20px;
    }
    .card{
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+   }
+   .card-title{
+    padding-right: 0%;
+   }
+   .card-price{
+    padding-right: 0%;
+   }
+   .btn-cart{
+    width: 100%;
    }
    .seller{
     flex-direction: column;
@@ -367,9 +375,18 @@ color: #8987A1;
    }
    .footer-content {
     width: 100%;
+    height: 100%;
+   }
+   .footer-title{
+    padding: 150px 0 0;
    }
    .footer-input{
     margin-left: 0;
+    margin-bottom: 140px;
+   }
+   .sub-btn{
+    margin-bottom: 140px;
+    
    }
    .last-section{
     flex-direction: column;
